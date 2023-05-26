@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="shortcut icon" href="img/img.jpg" type="image/x-icon">
+    <title>card-Portfolio</title>
+</head>
+
+<body class="bg-black-900">
+    <main>
+        <div class="container flex justify-center items-center">
+            <video class="flex justify-center items-center" autoplay loop muted>
+                <source src="img/videoDesktop.mp4" type="video/mp4">
+            </video>
+
+            <div class="card bg-white absolute cssanimation sequence fadeInBottom">
+                <div class="header">
+                    <img class="logo" src="img/logo.png" alt="">
+                </div>
+                <div class="article">
+                    <img class="profile" src="img/img.jpg" alt="">
+                    <div class="content">
+                        <div class="name">
+                            <span class="typing-text"></span>
+                            <span class="blink-cursor"></span>
+                        </div>
+                        <h2 class="major about"><i>Computer Science student at <span>CU</span></i></h2>
+                        <h3 class="age about"><b>18 Years old</b></h3>
+
+                        <div class="box bg-slate-100 py-1" style="padding-bottom: 50px;">
+                            <p class="about">Computer Science student who interested in <br> web development,
+                                political science, insurance, machine
+                                learning, deep learning etc. but everything <br> in process of self-learning currently.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer w-50%">
+                    <div class="btn mb-5 w-50% text-center text-white absolute">
+                        <a target="_blank" href="#" class="fixed github">
+                            <img class="w-5 h-5" src="img/github.png" alt="GitHub">
+                        </a>
+                        <a target="_blank" href="#" class="fixed linkedin">
+                            <img class="w-5 h-5" src="img/linkedin.png" alt="linkedin">
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+        <iframe src="img/music.mp3" allow="autoplay" id="audio" hidden ></iframe>
+        <audio id="audio" autoplay controls loop class="text">z
+            <source src="img/music.mp3" type="audio/mp3">
+        </audio>
+    </main>
+    
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

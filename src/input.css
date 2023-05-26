@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    z-index: -2;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    width: 180px;
+    height: 265px;
+    border-radius: 0.5rem;
+    animation: myanim 1.5s;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.cssanimation,
+.cssanimation {
+    animation-fill-mode: both;
+}
+
+.cssanimation {
+    display: inline-block
+}
+
+.fadeInBottom {
+    animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes myanim {
+    20% {
+        bottom: 100px;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    height: 28px;
+    padding-top: 2px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.article {
+    height: 200px;
+    background-color: white;
+}
+
+.profile {
+    height: 90px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.name {
+    font-size: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: fit-content;
+    width: 40px;
+}
+
+.typing-text {
+    animation: typing 3s steps(25);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    margin-right: 3px;
+}
+
+.blink-cursor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 15px;
+    margin-top: 4px;
+    background-color: black;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.major {
+    font-size: 8px;
+    padding-left: 10px;
+}
+
+.age {
+    padding-left: 10px;
+    font-size: 6.5px;
+    padding-top: 7px;
+}
+
+.box {
+    width: 165px;
+    padding-left: 5px;
+    margin: 2px;
+    margin-top: 3px;
+    margin-left: 7px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 50px;
+}
+
+p {
+    font-size: 6px;
+}
+
+.btn {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(199, 255, 232);
+}
+
+.github {
+    margin-left: 63px;
+}
+
+.linkedin {
+    margin-left: 90px;
+}
+
+audio {
+    margin-top: 350px;
+    width: 200px;
+    height: 30px;
+}
+
+about {
+    font-size: 6px;
+}
